@@ -1,0 +1,25 @@
+@import "../base";
+
+.preview-body{
+	padding: 15px; background:#fff;color:#666; font-size: 14px;
+}
+.preview-body .title {line-height: 70px; text-align:center; font-size:21px;}
+.preview-body .info{position:relative; margin:10px 0}
+.preview-body .info .info-name{color:#999}
+.preview-body .sub-title{margin-bottom: 20px; text-align:center; font-size: 16px; color: #333;}
+.preview-body .rules-box{margin-bottom: 25px; line-height: 1.8;}
+.preview-body .rules-box .rules-title{margin-bottom: 15px; font-weight: 700}
+.preview-body .rules-box .text{margin-bottom: 5px;}
+.preview-body .rules-box .fill{padding:0 2px;color:#333;text-decoration:underline}
+.preview-body .rules-box:last-child{margin-bottom:0}
+.preview-body .rules-signature{margin-bottom: 50px; overflow: hidden;}
+.preview-body .rules-signature .info{margin: 25px 0}
+.preview-body .info-img{height: 30px; position: relative; z-index: 3;}
+.preview-body .stamp{position:absolute; width: 96px; top: -30px;}
+.preview-body .stamp2{top: -10px;}
+.red{color: #f00 !important;}
+.big-img{margin-bottom: 4px;}
+.big-img img{
+	max-width: 100% !important;
+}
+strong{font-weight: 700;}

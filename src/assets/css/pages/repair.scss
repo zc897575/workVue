@@ -1,0 +1,94 @@
+@import "../base";
+
+.repair-body {
+    min-height: 100%;
+}
+.repair-list{
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    bottom: 0;
+}
+.repair-list-container {
+    .code-color {
+        color: #999;
+        font-size: .28rem;
+    }
+    .main-font {
+        color: #333;
+        font-size: .28rem;
+    }
+    .repair-item {
+        border-top: .15rem solid $bg-color;
+        width: 100%;
+        overflow: hidden;
+
+        .repair-heading {
+            width: 100%;
+            height: .88rem;
+            line-height: .88rem;
+            padding: 0 .3rem;
+            @include setLine(bottom, #eee);
+
+            .repair-code {
+                float: left;
+            }
+
+            .repair-pro {
+                float: right;
+                &.orange {
+                    color: #ff912f;
+                }
+                &.gray {
+                    color: #999;
+                }
+            }
+        }
+
+        .repair-detail-container {
+            padding: .18rem .3rem;
+
+            .repair-list-content {
+                line-height: .76rem;
+
+                &.ellipsis-style-01 {
+                    @include ellipsis(1);
+                }
+
+                &.ellipsis-style-02 {
+                    @include ellipsis(2);
+                    line-height: .55rem;
+                }
+
+            }
+        }
+    }
+}
+
+.none-repair-record {
+    width: 100%;
+    //@include setLine(top, $bg-color);
+    border-top: .15rem solid $bg-color;
+
+    .icon-container {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+
+        i {
+            width: 1.36rem;
+            height: 1.38rem;
+            display: block;
+            margin: 0 auto;
+            @include bgImg('none-repair.png')
+        }
+        p {
+            margin-top: .7rem;
+            color: #999;
+        }
+    }
+
+}

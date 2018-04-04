@@ -1,0 +1,57 @@
+{
+    "Data": {
+        "Detail": {
+            "CreateTime": "2017/7/25 14:47:42",
+            "Description": "坏了",
+            "Doorplate": "11",
+            "HouseId": 5,
+            "HouseNo": "123456",
+            "Id": 1,
+            "IsDeleted": 0,
+            "PayAmount": 400,
+            "PeopleType": 1,
+            "RentType": 2,
+            "Rental": 4000,
+            "RenterId": 2,
+            "RenterName": "Iverson",
+            "RepairArticles": "'测试'",
+            "RepairCode": "WX20170725144740",
+            "RepairName": "Iverson",
+            "RepairSource": 1,
+            "RepairTime": "2017/7/25 14:47:42",
+            "RepairUserId": 0,
+            "RoomId": 4,
+            "RoomName": "asd",
+            "RoomNo": "asdw",
+            "ServiceStatus": 10,
+            "Status": 4,
+            "StatusName": "已完成",
+            "UnitNo": "60",
+            "UpdateTime": "2017/7/25 14:47:42",
+            "VillageID": 4,
+            "VillageName": "乾溪小区"
+        },
+        "FeedBackDataResponse": [
+            {
+                "CreateTime": "2017/7/27 18:09:12",
+                "Description": "没修好",
+                "Id": 1014,
+                "RepairId": 1
+            }
+        ],
+        "RefuseRemark": null,
+        "RepairImgResponseArr": [
+            {
+                "ImgAddress":" http://www.hzjituan.com/images/ry-b-img18.png ",
+                "RepairId": 1,
+                "Sort": 0
+            },
+            {
+                "ImgAddress":"http://www.hzjituan.com/images/ry-b-img18.png ",
+                "RepairId": 1,
+                "Sort": 0
+            }
+        ]
+    },
+    "ReturnCode": 0
+}

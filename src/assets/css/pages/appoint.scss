@@ -1,0 +1,57 @@
+@import "../base";
+
+.appoint-body{
+    height: 100%;
+    padding: .4rem .3rem;
+    .input-box{
+        display: flex;
+        @include setLine(bottom, #eee);
+        input{
+            display: block;
+            flex: 1;
+            width: 60%;
+            height: 1.18rem;
+            background-color: transparent;
+        }
+    }
+    .icon-name{
+        @include bgImg('icon-user.png');
+    }
+    .icon-phone{
+        @include bgImg('icon-mobile.png');
+    }
+    .icon-code{
+        @include bgImg('icon-lock.png');
+    }
+    .appoint-icon{
+        display: inline-block;
+        width: $main-font-size;
+        height: .38rem;
+        margin: .4rem 0;
+        margin-right: 8px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        vertical-align: sub;
+    }
+    .get-code{
+        display: inline-block;
+        margin: .4rem 0;
+        color: #027dd5;
+        font-size: $small-font;
+    }
+    .unget-code{
+        color: $light-font-color;
+    }
+    .appoint-btn{
+        margin-top: 1.5rem;
+    }
+    .footer{
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: .23rem;
+        color: #bcbcbc;
+        a{
+            color: $main-color !important;
+        }
+    }
+}

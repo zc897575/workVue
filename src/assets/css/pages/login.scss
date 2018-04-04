@@ -1,0 +1,175 @@
+/*
+登录、注册样式
+*/
+@import "../base";
+
+.login-body{
+	padding: 1.5rem .32rem;
+	position: relative;
+	height: 100%;
+}
+.logo{
+	text-align: center;
+	margin-bottom: 1.4rem;
+
+	img{
+		width: 2.8rem;
+	}
+}
+.hidden{
+	visibility: hidden;
+}
+.list{
+	display: flex;
+	align-items: center;
+	margin-bottom: .16rem;
+	padding-bottom: .24rem;
+	@include setLine(bottom, #eee);
+	z-index: 2;
+
+	i{
+		width: .28rem;
+		height: .38rem;
+		display: inline-block;
+		margin-right: 8px;
+
+		&.lock{
+			@include bgImg('icon-lock.png');
+		}
+		&.mobile{
+			@include bgImg('icon-mobile.png');
+		}
+	}
+}
+.input-box{
+	flex: 1;
+
+	input{
+		width: 100%;
+		padding: 8px;
+	}
+}
+.get-code{
+	width: 80px;
+	font-size: $small-font;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	position: relative;
+	margin-left: 8px;
+	color: #027dd5;
+}
+.remove-input{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+
+	em{
+		width: .22rem;
+		height: .22rem;
+		display: inline-block;
+		@include bgImg('remove.png');
+	}
+}
+.tip{
+	color: $light-font-color;
+	margin-top: .3rem;
+}
+.login-btn{
+	margin: .88rem 0 .1rem;
+	width: 100%;
+	display: block;
+	height: .92rem;
+	line-height: .92rem;
+	text-align: center;
+	color: #fff;
+	background: $main-color;
+	font-size: .32rem;
+	border-radius: 4px;
+
+	&:active{
+		background: $btn-hover;
+	}
+}
+.remember-login{
+	width: 100%;
+	position: absolute;
+	bottom: .9rem;
+	left: 0;
+	text-align: center;
+
+	i{
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		@include bgImg('checkbox.png');
+		vertical-align: middle;
+
+		&.on{
+			@include bgImg('checkbox-on.png');
+		}
+	}
+	span{
+		font-size: $small-font;
+		color: $light-font-color;
+		margin-left: 4px;
+	}
+	&.inputing{
+		display: none;
+	}
+}
+@media screen and (min-aspect-ratio: 12/8) {
+	.remember-login{
+		position: static;
+		margin: 1rem 0 .1rem;
+	}
+}
+.dialog-con{
+	padding: 14px .5rem;
+	text-align: center;
+
+	.list-view{
+		padding-bottom: .3rem;
+		margin-bottom: .36rem;
+		@include setLine(bottom, #eee);
+	}
+	.code-img{
+		width: 1.5rem;
+		height: .56rem;
+		border-radius: .28rem;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: .5rem;
+	}
+	.code-fresh{
+		width: .38rem;
+		height: .38rem;
+		display: inline-block;
+		vertical-align: middle;
+		@include bgImg('code-fresh.png');
+
+		&.on{
+			transition: transform .5s;
+			transform: rotate(360deg);
+		}
+	}
+	input{
+		padding: 4px 0;
+		text-align: center;
+	}
+	.dialog-btn{
+		background: none;
+		color: $main-color;
+		display: block;
+		text-align: center;
+		width: 100%;
+		font-size: .36rem;
+
+		&:disabled{
+			background: none;
+			color: #999;
+		}
+	}
+}
+
+

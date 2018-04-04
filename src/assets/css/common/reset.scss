@@ -1,0 +1,181 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+	background-size: 100% 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+ol,ul {
+    list-style:none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption,td,th {
+    vertical-align: middle
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: 'helvetica', "Microsoft YaHei",Arial,sans-serif;
+    border-radius: 0; //ios
+    box-shadow: none;
+    outline: 0;
+    color: inherit; /* 1 */
+    margin: 0; /* 3 */
+	line-height: 1.42;
+}
+textarea{
+    resize: none;
+    overflow: auto;
+}
+input::-ms-clear{
+    display:none;
+}
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    display: inline-block;
+    border: 0;
+    background: none;
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+em,i{
+    font-style:normal;
+}
+img {
+    border: 0; /* 1 */
+    vertical-align: middle; /* 0 */
+}
+
+li {
+    list-style: none;
+}
+
+textarea::-webkit-scrollbar,
+div::-webkit-scrollbar,
+ul::-webkit-scrollbar{
+    width:0;
+    height:0;
+}
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 2px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 2px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+::placeholder{
+	color: #bcbcbc;
+}
+::-webkit-input-placeholder{
+	color: #bcbcbc;
+}
+button:disabled{
+	background-color: #aaa !important;
+	color: #fff !important;
+
+	&:before{
+		border-color: #aaa !important;
+	}
+}
+html, body {
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+strong{
+    font-weight: 700;
+}
+body {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font: 500 .28rem/1.42857143 'helvetica', "Microsoft YaHei",Arial,sans-serif;
+    background: #fff;
+    color: #666;
+    -webkit-touch-callout: none;
+}

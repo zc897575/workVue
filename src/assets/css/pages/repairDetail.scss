@@ -1,0 +1,241 @@
+@import "../base";
+
+.feedback-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .feedback-panel {
+        width: 78.7%;
+        padding: .4rem .4rem 0;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-border-radius: .2rem;
+        border-radius: .2rem;
+
+        .panel-heanding {
+            text-align: center;
+            position: relative;
+            padding-bottom: .2rem;
+            @include setLine(bottom, #eee);
+
+            span {
+                color: #333;
+                font-size: .36rem;
+            }
+            i {
+                position: absolute;
+                display: inline-block;
+                width: .21rem;
+                height: .22rem;
+                right: 0;
+                top: .15rem;
+                @include bgImg('remove.png')
+            }
+        }
+        .feedback-text {
+            border: none;
+            padding-top: .3rem;
+            width: 100%;
+            height: 2.2rem;
+            color: #333;
+        }
+
+        .text-count {
+            width: 100%;
+            height: .6rem;
+            line-height: .6rem;
+            text-align: right;
+            color: #bcbcbc;
+            @include setLine(bottom, #eee);
+
+            span {
+                display: inline-block;
+                color: $main-color;
+            }
+        }
+
+        .submit-content {
+            display: block;
+            text-align: center;
+            width: 100%;
+            color: #ff912f;
+            font-size: .36rem;
+            height: 1rem;
+            line-height: 1rem;
+
+            &:visited {
+                color: #000;
+            }
+        }
+    }
+}
+
+.warring-container {
+    width: 100%;
+    padding: .22rem .3rem;
+    background-color: #fff5d5;
+    color: #b5931d;
+    font-size: .28rem;
+    border-bottom: .14rem solid #eee;
+    text-align: justify;
+}
+
+.repair-metre {
+    @include setLine(bottom, #eee);
+}
+
+.repair-detail-container {
+    width: 100%;
+    padding: 0 .3rem;
+
+    .detail-list {
+        color: #333;
+        font-size: .28rem;
+        padding: .35rem 0;
+        @include setLine(bottom, #eee);
+        position: relative;
+
+        &.detail-ellipsis01 {
+            @include ellipsis(1);
+        }
+
+        .detail-ellipsis02 {
+            @include ellipsis(2);
+            span{
+                line-height: .45rem;
+            }
+        }
+
+        .detail-heading {
+            color: #999;
+        }
+
+        .font-color {
+            color: $main-color;
+        }
+
+        .btn-feekback {
+            display: inline-block;
+            padding: .15rem .12rem;
+            color: #999;
+            font-size: .28rem;
+            background-color: #f8f8f8;
+            height: .5rem;
+            line-height: .2rem;
+            -webkit-border-radius: .1rem;
+            border-radius: .1rem;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+    .detail-ellipsis2{
+        @include ellipsis(2);
+    }
+}
+
+.heading-title {
+    font-size: .28rem;
+    color: #999;
+}
+
+.upload-imgs {
+    padding: .4rem .3rem .25rem;
+    overflow: hidden;
+
+    .img-list {
+        margin-top: .35rem;
+
+        li {
+            width: 1.52rem;
+            height: 1.52rem;
+            vertical-align: top;
+            overflow: hidden;
+            float: left;
+            margin-right: .2rem;
+            margin-bottom: .2rem;
+
+            img {
+                width: inherit;
+                height: 1.52rem;
+
+            }
+        }
+    }
+}
+
+.feedback-container {
+    width: 100%;
+    padding: 0 .3rem;
+    overflow: hidden;
+
+    .feedback-content {
+        width: 100%;
+        padding: .4rem 0 0;
+        @include setLine(top, #eee);
+        overflow: hidden;
+
+        .feedback-list {
+            margin-top: .36rem;
+            li {
+                padding: 0 0 .36rem;
+
+                p {
+                    color: #333;
+                    font-size: .28rem;
+                }
+
+                span {
+                    font-size: .24rem;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+.btn-confirm-container {
+    width: 100%;
+    padding: .45rem .3rem .6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

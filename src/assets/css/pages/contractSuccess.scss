@@ -1,0 +1,52 @@
+@import "../base";
+
+.success-body{
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    padding: 1.2rem 0;
+    -webkit-box-align: center;
+    text-align: center;
+    .success-main{
+        margin-top: -1.2rem;
+        width: 100%;
+    }
+    .success-title{
+        margin-bottom: 1.3rem;
+        font-size: .42rem;
+        font-weight: bolder;
+        color: $main-color;
+    }
+    .success-img{
+        margin: 0 auto .5rem;
+        width: 3.14rem;
+    }
+    .success-text{
+        line-height: .71rem;
+        font-size: $main-font-size;
+        color: #999;
+    }
+    .yellow-text{
+        color: $main-color;
+    }
+    .download-btn{
+        position: fixed;
+		left: 50%;
+		bottom: 1rem;
+		transform: translateX(-50%);
+		z-index: 1;
+    }
+    @media screen and (min-aspect-ratio: 12/8) {
+        @at-root .success-body{
+            display: block;
+        }
+        .success-main{
+            margin-top: 0;
+        }
+        .download-btn{
+            position: static;
+            transform: translateX(0);
+            margin-top: 1rem;
+        }
+    }
+}

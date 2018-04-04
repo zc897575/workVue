@@ -1,0 +1,16 @@
+@import "../base";
+
+.renter-main {
+    background: $bg-color;
+
+    .renter-block {
+        margin-bottom: .15rem;
+        padding: 0 .3rem;
+        background: #fff;
+
+        .renter-row {
+            @include setLine(bottom, #eee)
+            padding: .35rem 0;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import "../base";
+
+.submit-body {
+    width: 100%;
+    padding: 0 .3rem;
+}
+
+.input-content {
+    width: 100%;
+    height: 1.1rem;
+    @include setLine(bottom, #eee);
+    line-height: 1.1rem;
+}
+
+.item-name {
+    width: 100%;
+    font-size: .28rem;
+    color: #333;
+}
+
+.problem-intro {
+    width: 100%;
+    border: none;
+    height: 2.65rem;
+    padding-top: .4rem;
+    color: #333;
+    font-size: .28rem;
+}
+
+.img-container {
+    min-height: 1.72rem;
+}
+
+.img-list {
+    margin-top: .35rem;
+
+    li {
+        width: 1.52rem;
+        height: 1.52rem;
+        vertical-align: top;
+        float: left;
+        margin-right: .2rem;
+        margin-bottom: .2rem;
+        position: relative;
+        .img-box {
+            position: relative;        
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        img {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        i {
+            display: block;
+            width: .43rem;
+            height: .43rem;
+            @include bgImg('icon-remove-img.png');
+            position: absolute;
+            top: -.1rem;
+            left: -.1rem;
+        }
+    }
+}
+
+.add-imgs {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    @include bgImg('icon-add.png');
+    background-color: #f4f5f9;
+    background-position: center center;
+    -webkit-background-size: 36%;
+    background-size: 36%;
+    background-repeat: no-repeat;
+
+}
+
+.submit-btn {
+    margin:2.1rem auto .5rem;
+}
+
+.hide-input {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

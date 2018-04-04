@@ -1,0 +1,239 @@
+/*
+登录、注册样式
+*/
+@import "../_base";
+
+$search-bg: #fff;
+$search-height: 36px;
+
+.search{
+	position: relative;
+	z-index: 5;
+	background: #fff;
+
+	.btn{
+		width: 1.2rem;
+		background: $main-color;
+		color: #fff;
+		border-radius: 0 6px 6px 0;
+		height: $search-height;
+		line-height: $search-height;
+		position: relative;
+		z-index: 3;
+
+		&:active{
+			background: $btn-hover;
+		}
+	}
+	.select{
+		width: 1.4rem;
+		position: relative;
+		color: #fff;
+		text-align: center;
+		height: $search-height;
+		line-height: $search-height;
+		margin-left: -10px;
+
+		.title{
+			display: block;
+		}
+		.text{
+			display: inline-block;
+		}
+		i{
+			display: inline-block;
+			vertical-align: middle;
+			@include triangle(bottom, 5px, #fff);
+
+			&.on{
+				@include triangle(top, 5px, #fff);
+			}
+		}
+		.choose{
+			width: 1.8rem;
+			background: #fff;
+			position: absolute !important;
+			z-index: 9 !important;
+			left: 0;
+			top: 44px;
+			border-radius: 4px;
+			box-shadow: 0 0 3px rgba(0,0,0,.08);
+
+			@include setLine(all, #ddd);
+			border-radius: 8px;
+		}
+		em{
+			@include triangle(top, 10px, #fff);
+			position: absolute;
+			left: 5px;
+			top: -7px;
+		}
+		.choose-item{
+			display: block;
+			text-align: center;
+			color: $text-font-color;
+			line-height: .8rem;
+			-webkit-user-select: none;
+			user-select: none;
+
+		}
+		.line{
+			margin: 0 8px;
+			display: block;
+			height: 1px;
+			line-height: 0;
+
+			@include setLine(bottom, #ddd);
+		}
+
+	}
+	.weui-icon-search{
+		line-height: 26px;
+		display: none;
+	}
+	.weui-search-bar__label{
+		text-align: left;
+		padding: 0 0 0 10px;
+		border-radius: 10px;
+		background: $search-bg;
+		height: 34px;
+		line-height: 34px;
+		top: 1px;
+		left: 1px;
+
+		.weui-icon-search{
+			margin-right: -4px;
+		}
+	}
+	.weui-search-bar__label span{
+		vertical-align: 1px;
+	}
+	.weui-search-bar__cancel-btn{
+		display: none !important;
+	}
+	.weui-cells.vux-search_show{
+		position: absolute;
+		width: 100%;
+		-webkit-overflow-scrolling : touch;
+		top: 50px;
+		bottom: 0;
+		left: 0;
+		max-height: 1000px;
+	}
+	.vux-search-fixed{
+		height: 100%;
+	}
+	.weui-search-bar__form,
+	.weui-search-bar{
+		background: #fff;
+	}
+	.weui-search-bar__form:after{
+		background: $search-bg;
+		border: 0;
+		border-radius: 12px 0 0 12px;
+	}
+	.weui-search-bar__box{
+		padding-right: 10px;
+		padding-left: 10px;
+		@include setLine(all, #dedede);
+
+		&:before{
+			width: 210%;
+			border-radius: 10px;
+			border-right: 0;
+		}
+	}
+	.search-point{
+		color: $main-color;
+	}
+	.weui-search-bar__box .weui-search-bar__input{
+		padding: 8px 20px 8px 0;
+		height: $search-height;
+		box-sizing: border-box;
+	}
+	.weui-search-bar__box .weui-icon-clear{
+		line-height: $search-height;
+	}
+	.weui-search-bar{
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
+	.marker{
+		width: 7px;
+		height: 10px;
+		float: left;
+		margin: 3px 8px 0 0;
+		@include bgImg('marker.png')
+	}
+	.search-list{
+		text-align: left;
+		overflow: hidden;
+		font-size: $main-font-size;
+	}
+	.list-result{
+		display: block;
+		margin: 0 50px 0 18px;
+		@include ellipsis(1);
+	}
+	.result-num{
+		float: right;
+	}
+	.weui-cell{
+		padding: .3rem 14px;
+		position: relative;
+		display: block;
+
+		&:before{
+			content: " ";
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 15px;
+			height: 2px;
+			border-top: 1px solid #eee;
+			transform-origin: 0 0;
+			transform: scaleY(0.5);
+			left: 15px;
+		}
+	}
+}
+.search-hot{
+	padding: .3rem;
+	text-align: left;
+	font-size: $main-font-size;
+
+	.hot-title{
+		color: #999;
+
+		i{
+			width: 11px;
+			height: 15px;
+			display: inline-block;
+			vertical-align: -3px;
+			margin-right: 7px;
+			@include bgImg('search-hot.png');
+		}
+	}
+	.hot-con{
+		overflow: hidden;
+		padding-top: .2rem;
+	}
+	.hot-word{
+		display: inline-block;
+		white-space: nowrap;
+		margin: 0 0 10px 10px;
+		padding: 0 .24rem;
+		height: .58rem;
+		line-height: .58rem;
+		position: relative;
+		background: #eee;
+		border-radius: 3px;
+
+		&:active{
+			background: #ddd;
+		}
+	}
+}
+

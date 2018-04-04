@@ -1,0 +1,150 @@
+@import "../base";
+
+
+.contract-body {
+    min-height: 100%;
+    .contract-main{
+        background-color: $bg-color;
+        padding-bottom: .4rem;
+    }
+    .contract-block {
+        background-color: $body-bg;
+        margin-bottom: .15rem;
+        padding: .01rem 0;
+    }
+    .last-block{
+        margin-bottom: .4rem;
+    }
+    .unline{
+        @include setLine(bottom,#eee);
+    }
+    .pdlr30{
+        padding: 0 .3rem;
+    }
+    .contract-cell{
+        display: -webkit-box;
+        height: .9rem;
+        font-size: 0;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+    }
+    .contract-cell.first-cell{
+        margin-top: .3rem;
+    }
+    .contract-cell.last-cell{
+        margin-bottom: .3rem;
+    }
+    .contract-title{
+        .main-font{
+            color: $main-color;
+        }
+    }
+    .contract-logo{
+        @include bgImg('icon-logo.png');
+        display: inline-block;
+        width: .68rem;
+        height: .68rem;
+        margin-right: 5px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+    }
+    .main-font{
+        display: block;
+        -webkit-box-flex: 1;
+        font-size: $main-font-size;
+        color: #333;
+    }
+    .sub-font{
+        font-size: $main-font-size;
+        color: #999;
+        text-align: right;
+    }
+    .icon-font{
+        display: inline-block;
+        font-size: $small-font;
+        color: $main-color;
+        padding: 0 5px;
+        @include setLine(all,$main-color);
+        &:before{
+            border-radius: 10px;
+        }
+    }
+    .rental-font{
+        font-size: .42rem;
+        font-weight: bold;
+        color: $main-color;
+    }
+    .little-font{
+        font-size: $small-font;
+    }
+    .important{
+        color: #fe7172;
+    }
+    .idcard-box{
+        display: -webkit-box;
+        margin-bottom: .4rem;
+    }
+    .idcard{
+        display: block;
+        -webkit-box-flex: 1;
+        padding: .1rem .2rem;
+        img{
+            width: 100%;
+        }
+    }
+    .treaty{
+        text-align: center;
+        margin-bottom: .3rem;
+        color: $main-color;
+    }
+    .chick{
+        display: inline-block;
+        width: .24rem;
+        height: .24rem;
+        margin-right: 5px;
+        vertical-align: baseline;
+    }
+    .chicked{
+        @include bgImg('checkbox-on.png');
+        background-size: 100% 100%;
+    }
+    .unchicked{
+        @include bgImg('checkbox.png');
+        background-size: 100% 100%;
+    }
+    .contract-submit{
+        display: block;
+        margin: 0 auto;
+    }
+    .empty-contract{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: $body-bg;
+        .empty-contract-container {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-70%);
+            text-align: center;
+            i {
+                width: 1.13rem;
+                height: 1.31rem;
+                display: block;
+                margin: 0 auto;
+                @include bgImg('contract-empty.png')
+            }
+            p {
+                margin-top: .7rem;
+                color: #999;
+            }
+            .sub-P{
+                margin-top: .3rem;
+                font-size: $small-font;
+            }
+        }
+    }
+}

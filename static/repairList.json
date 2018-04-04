@@ -1,0 +1,62 @@
+{
+    "Data": {
+        "List": [
+            {
+                "Status": 0,
+                "Id": "15",
+                "RepairCode": "12312313245",
+                "RepairArticles": "门锁坏掉门锁坏掉门锁坏掉门锁坏掉门锁坏掉门锁坏掉门锁坏掉",
+                "Description": "坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙坏损损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙坏损损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙",
+                "RepairTime": "07/16 19:00",
+                "StatusName": "施工中"
+            },
+            {
+                "Status": 2,
+                "Id": "10",
+                "RepairCode": "456423135456",
+                "RepairArticles": "马桶被坐坏,盖子都碎了",
+                "Description": "坏损严重，盖子，还有底座都被压坏了，赶快来修吧",
+                "RepairTime": "05/12 19:00",
+                "StatusName": "已完成"
+            },
+            {
+                "Status": 3,
+                "Id": "13",
+                "RepairCode": "456154896154",
+                "RepairArticles": "床板断裂",
+                "Description": "坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙",
+                "RepairTime": "05/05 19:00",
+                "StatusName": "待维修"
+            },
+            {
+                "Status": 4,
+                "Id": "12",
+                "RepairCode": "468489456846456",
+                "RepairArticles": "水龙头坏掉",
+                "Description": "坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙",
+                "RepairTime": "05/13 19:00",
+                "StatusName": "已拒绝"
+            },
+            {
+                "Status": 4,
+                "Id": "12",
+                "RepairCode": "468489456846456",
+                "RepairArticles": "水龙头坏掉",
+                "Description": "坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙",
+                "RepairTime": "05/13 19:00",
+                "StatusName": "已拒绝"
+            },
+            {
+                "Status": 4,
+                "Id": "12",
+                "RepairCode": "468489456846456",
+                "RepairArticles": "水龙头坏掉",
+                "Description": "坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙坏损严重，没有钥匙",
+                "RepairTime": "05/13 19:00",
+                "StatusName": "已拒绝"
+            }
+        ],
+        "PageCount": "5"
+    },
+    "ReturnCode":0
+}

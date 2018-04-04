@@ -1,0 +1,28 @@
+{
+    "Data": {
+        "data": {
+            "Id": "1234",
+            "HouseName": "徐泾北欧风复室一房出租",
+            "rentType": "整租",
+            "MonthlyRent": "2800",
+            "ZongYaJin": "6500",
+            "CustomerName": "张三",
+            "Mobile": "15698787852",
+            "IdCardNo": "310105198702043201",
+            "IdCardPhoto": ["static/images/id-up.png","static/images/id-down.png"],
+            "PaymentMonth": "月付",
+            "StartDate": "2017.01.05",
+            "EndDate": "2018.01.05",
+            "ContractRemark": "水电煤物业费缴纳和家具配置约定",
+            "CardType": "1",
+            "CustomerSignature": "static/images/signature.png",
+            "stamp": "static/img/stamp.png",
+            "kfTel": "400-025-6788",
+            "jbr": "葛恒清",
+            "licence": "41000000201705270030",
+            "owner": "上海律阳资产管理有限公司",
+            "Area": "120"
+        }
+    },
+    "ReturnCode": "0"
+}

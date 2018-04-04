@@ -1,0 +1,25 @@
+$version:                   201606121 !default;
+
+/*bg color*/
+$body-bg: #fff !default;
+
+/*font-family*/
+$fontStack: -apple-system-font, "Helvetica Neue", sans-serif, 'Microsoft YaHei';
+
+/*button*/
+$btn-hover: #ff881e !default;
+
+/*color*/
+$main-color: #ffa000 !default; //网站主色调
+$text-font-color: #666 !default; //正文颜色
+$light-font-color: #ababab !default; //提示字体颜色
+$bg-color: #efefef !default; //页面背景色
+
+/*font-size*/
+$small-font: .24rem !default; //小字体
+$main-font-size: .28rem !default; //正文字体大小
+$big-font: .64rem !default; //大标题
+
+/*layout*/
+$min-width: 320px !default;
+

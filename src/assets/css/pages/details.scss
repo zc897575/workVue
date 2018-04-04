@@ -1,0 +1,332 @@
+@import "../base";
+
+.details-body {
+    $lightGray: #999;
+    $mainGray: #333;
+    $docorate: #eee;
+    background-color: $bg-color;
+    //margin-bottom: 1.1rem;
+    .title{
+        padding: .3rem 0;
+        color: $lightGray;
+    }
+    .photo {
+        position: relative;
+        .pic-count {
+            color: $body-bg;
+            position: absolute;
+            right: .15rem;
+            bottom: .15rem;
+            font-size: 0;
+        }
+        .now-index {
+            margin-right: .02rem;
+            font-size: .32rem;
+        }
+        .all-index {
+            font-size: $main-font-size;
+        }
+    }
+    .info-block {
+        padding: 0 .3rem .4rem ;
+        margin-bottom: .15rem;
+        background-color: $body-bg;
+        font-size: $main-font-size;
+	    position: relative;
+    }
+    .info-else-block{
+        padding: .3rem .4rem;
+    }
+    .info-name-location {
+        max-width: 70%;
+    }
+    .info-name {
+        @include ellipsis(1);
+        color: $mainGray;
+        font-size: .36rem;
+    }
+    .info-location {
+        @include ellipsis(1);
+        padding-top: $main-font-size;
+        font-size: $small-font;
+        color: $lightGray;
+    }
+    .location-icon {
+        display: inline-block;
+        width: .14rem;
+        height: .2rem;
+        margin-right: .1rem;
+        vertical-align: middle;
+        @include bgImg('icon-location.png');
+        background-repeat: no-repeat;
+    }
+    .location-text{
+        vertical-align: middle;
+    }
+    .info-price {
+        text-align: right;
+        color: $main-color;
+        font-size: 0;
+    }
+    .info-rental {
+        font-size: .46rem;
+    }
+    .yuan {
+        font-size: $small-font
+    }
+    .info-left p,
+    .info-right p {
+        display: -webkit-box;
+        margin-bottom: .4rem;
+        color: $lightGray;
+        span {
+            display: block;
+            -webkit-box-flex: 1;
+            color: $mainGray;
+            vertical-align: top;
+        }
+        .house-type{
+            display: inline;
+        }
+    }
+    .info-left p:last-child,
+    .info-right p:last-child {
+        margin-bottom: 0;
+    }
+    .info-right p span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .else-block{
+        padding: 0 0 .2rem 0;
+	    position: relative;
+    }
+    .feature-ul{
+        @include setLine(bottom, $docorate);
+    }
+    .info-feature{
+        position: relative;
+    }
+    .info-feature,.info-note,.info-note-showall{
+        padding: 0 .3rem;
+    }
+    .else-title{
+        padding: .3rem .3rem
+    }
+    .feature-list{
+        display: inline-block;
+	    text-align: center;
+        height: .5rem;
+        line-height: .46rem;
+        padding: 0 .2rem;
+        margin-right: .2rem;
+        margin-bottom: .3rem;
+        min-width: 1rem;
+        vertical-align: middle;
+	    @include setLine(all, $lightGray);
+
+	    &:before{
+		    border-radius: 4px;
+		    left: -1px;
+		    top: -1px;
+	    }
+    }
+    @at-root &.android .feature-list{
+        line-height: .55rem;
+    }
+    .info-note{
+        @include ellipsis(4);
+        line-height: .4rem;
+        margin: .3rem 0 .2rem;
+        color: $mainGray;
+        word-break: break-all;
+        span{
+            color: $lightGray;
+        }
+    }
+    .info-note-showall{
+        line-height: .4rem;
+        margin: .3rem 0 .2rem;
+        color: $mainGray;
+        word-break: break-all;
+        span{
+            color: $lightGray;
+        }
+    }
+    .arrow-box{
+        text-align: center;
+    }
+    .arrow{
+        @include setArrow(bottom,.25rem,#ddd);
+    }
+    .config-list{
+        @include clearfix();
+    }
+    .config-bottom{
+        @include setLine(top, $docorate);
+    }
+    .config-icon{
+        margin: 0 .29rem .3rem;
+        float: left;
+    }
+    .icon{
+        display: block;
+        margin: 0 auto .2rem;
+        width: .75rem;
+        height: .75rem;
+    }
+    .icon-text{
+        color: $text-font-color;
+        text-align: center;
+    }
+    @each $item in (wifi,xi-yi-ji,hong-gan-ji,kong-tiao,bing-xiang,re-shui-qi,tv,wei-bo-lu,kao-xiang,dian-ti,jian-shen-fang,you-yong-chi,park,chao-shi,chu-fang,dian-ci-lu,chu-gui,you-yan-ji,yi-gui,shu-zhuo,yi-zi,chuang,mei-qi,zhi-neng-suo,mei-qi,zhi-jin,shu-yi,can-zhuo){
+            .#{$item}{
+                background-image: url('../assets/img/detail/#{$item}.png');
+                background-size: 100% auto;
+            }
+        }
+    .roomie-icon{
+        display: inline-block;
+        margin: 0 auto;
+        width: .25rem;
+        height: .25rem;
+    }
+    .man{
+        @include bgImg('icon-man.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .female{
+        @include bgImg('icon-female.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .tick{
+        @include bgImg('icon-tick.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    .bright{
+        color: $main-color;
+    }
+    .recommend{
+        overflow: hidden;
+	    height: 7rem;
+    }
+    .recommend-box{
+        white-space : nowrap;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .recommend-list{
+        display: inline-block;
+        width: 4.2rem;
+        margin: 0 .3rem .05rem;
+        box-shadow: 2px 2px 9px rgba(177,177,177,.35);
+        .recommendImg{
+            width: 100%;
+            height: 3.15rem;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .recommend-block{
+            padding: .2rem;
+            background-color: $body-bg;
+            font-size: $main-font-size;
+        }
+        .recommend-name-location {
+            max-width: 70%;
+        }
+        .recommend-name {
+            @include ellipsis(1);
+            color: $mainGray;
+            font-size: .36rem;
+        }
+        .recommend-location{
+            @include ellipsis(1);
+            font-size: $small-font;
+            color: $lightGray;
+        }
+        .recommend-location-text{
+            vertical-align: middle;
+        }
+        sup{
+            top: -.2em;
+        }
+        .recommend-price{
+            text-align: right;
+            color: $main-color;
+            font-size: 0;
+        }
+        .recommend-rental {
+            font-size: .38rem;
+        }
+        .recommend-yuan {
+            font-size: .22rem
+        }
+    }
+    .appoint{
+        display: -webkit-box;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        background-color: $body-bg;
+        z-index: 2;
+
+        .h-line {
+            display: inline-block;
+            width: 1px;
+            height: .9rem;
+            background: #eee;
+            vertical-align: -.75rem;
+        }
+
+        .bottom-btn {
+            display: block;
+            -webkit-box-flex: 1;
+            width: 33%;
+            height: 1.1rem;
+            line-height: 1.1rem;
+            font-size: .32rem;
+            @include setLine(top, #eee);
+        }
+
+        .appoint-btn{
+            color: $main-color !important;
+            background-color: $body-bg;
+        }
+        .booking-btn{
+            color: white !important;
+            background-color: $main-color;
+        }
+        .call-number{
+            color: $text-font-color !important;
+            background-color: $body-bg;
+        }
+
+        .appoint-icon {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: text-bottom;
+        }
+
+        .icon-phone{
+            @include bgImg('icon-phone.png');
+            width: .31rem;
+            height: .32rem;
+            background-repeat: no-repeat;
+        }
+
+        .icon-appoint{
+            @include bgImg('icon-appoint.png');
+            width: .35rem;
+            height: .35rem;
+            background-repeat: no-repeat;
+        }
+    }
+}
